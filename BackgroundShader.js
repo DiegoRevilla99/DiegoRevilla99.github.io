@@ -247,3 +247,33 @@ renderer.setAnimationLoop(animation);
 initPost();
 
 document.getElementById("container3D").appendChild(renderer.domElement);
+
+function resize() {
+  const container = document.getElementById("container3D");
+
+  const width = container.offsetWidth;
+  const height = container.offsetHeight;
+
+  renderer.setSize(width, height);
+  camera.aspect = width / height;
+
+  const imageAspect = 853 / 1280;
+
+  let a1;
+  let a2;
+
+  if (height / width > imageAspect) {
+    a1 = (width / height) * imageAspect;
+    a2 = 1;
+  } else {
+    a1 = 1;
+    a2 = height / width / imageAspect;
+  }
+  camera.updateProjectionMatrix();
+}
+
+function setupResize() {
+  window.addEventListener("resize", resize);
+}
+
+setupResize();
