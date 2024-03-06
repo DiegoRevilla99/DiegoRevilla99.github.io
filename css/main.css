@@ -173,7 +173,21 @@ em {
     cursor: pointer;
 }
 
+.parentLineContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 37px solid transparent;
+    box-sizing: border-box;
+}
 
+.childLineContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+}
 
 
 

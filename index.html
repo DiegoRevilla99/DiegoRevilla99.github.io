@@ -24,24 +24,8 @@
     </script>
   </head>
   <body>
-    <div
-      style="
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        border: 37px solid transparent;
-        box-sizing: border-box;
-      "
-    >
-      <div
-        style="
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          box-sizing: border-box;
-        "
-      ></div>
+    <div class="parentLineContainer">
+      <div class="childLineContainer"></div>
     </div>
     <header>
       <div>
@@ -102,11 +86,16 @@
         <h2 class="paddedTitle">PROJECTS</h2>
         <div class="slider">
           <div class="item">
-            <h1>Slide 1</h1>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam
-            repudiandae explicabo expedita labore, sequi minus neque beatae voluptatum, quasi
-            accusamus quia quis voluptas laborum ad! Ab totam doloribus, excepturi possimus rem vel
-            quia fugit molestiae officiis!
+            <figure style="margin-left: 0; margin-right: 0; margin-top: 0">
+              <img src="/public/img/proyecto1.png" class="projectImage" />
+              <figcaption class="cardInfo">
+                <h2>Web News</h2>
+                <span
+                  >Web system that manages users, news and articles of the company Oro Radio
+                  Oaxaca</span
+                >
+              </figcaption>
+            </figure>
           </div>
           <div class="item">
             <figure style="margin-left: 0; margin-right: 0; margin-top: 0">
@@ -121,11 +110,16 @@
             </figure>
           </div>
           <div class="item">
-            <h1>Slide 3</h1>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam
-            repudiandae explicabo expedita labore, sequi minus neque beatae voluptatum, quasi
-            accusamus quia quis voluptas laborum ad! Ab totam doloribus, excepturi possimus rem vel
-            quia fugit molestiae officiis!
+            <figure style="margin-left: 0; margin-right: 0; margin-top: 0">
+              <img src="/public/img/proyecto3.jpeg" class="projectImage" />
+              <figcaption class="cardInfo">
+                <h2>English School</h2>
+                <span
+                  >Web system that manages teachers, students, courses and online classes to learn
+                  English.</span
+                >
+              </figcaption>
+            </figure>
           </div>
 
           <button id="next">&gt;</button>
