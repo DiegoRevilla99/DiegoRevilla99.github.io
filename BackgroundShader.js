@@ -3,7 +3,7 @@ import * as THREE from "three";
 
 import { EffectComposer } from "three/addons/postprocessing/EffectComposer";
 import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
-import { DotScreenShader } from "./CustomShaders/customShader.js";
+import { DotScreenShader } from "./customShaders/DotScreenShader.js";
 import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 
 const fragment = `uniform float time;
