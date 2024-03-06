@@ -30,6 +30,54 @@ section {
 }
 
 
+.principalContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principalBox {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.titleBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem  
+}
+
+.titleName {
+    font-family: kaftan;
+        color: white;
+        font-size: 6rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        user-select: none;
+        opacity: 0.9;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.subtitleName {
+    font-family: kaftan;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    text-align: right;
+    user-select: none;
+    opacity: 0.9;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+
 .paddedTitle {
     font-family: kaftan;
     color: rgb(120, 158, 113);
@@ -40,33 +88,11 @@ section {
     padding-left: 18rem;
 }
 
-.item {
-
-    position: absolute;
-    width: 40rem;
-    height: auto;
-    text-align: justify;
-    background-color: #000;
-    border-radius: 10px;
-    /* padding: 20px; */
-    transition: 0.5s;
-
-
-    /* top: 5rem; */
-}
-
-.cardInfo {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: aliceblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.cardInfo h2 {
-    color: rgb(120, 158, 113);
+.aboutArticle {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem
 }
 
 .aboutMeInfo {
@@ -85,6 +111,36 @@ section {
     
 }
 
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: 0.8;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: 0.9;
+}
+
+em {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: 0.8;
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    object-fit: cover;
+}
 
 #container3D {
     width: 100%;
@@ -94,9 +150,9 @@ section {
 
 #principalContainer  {
     box-sizing: border-box;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
     transition: border 0.5s ease-in-out;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 95%);
 }
@@ -121,6 +177,12 @@ section {
 
 
 
+#aboutSection {
+    display: flex;
+        flex-direction: column;
+        color: aliceblue
+}
+
 #sliderSection {
     background-color: #171407;
     padding-top: 5rem !important;
@@ -133,186 +195,20 @@ section {
 }
 
 #skillsSection {
-/* padding-top: 5rem !important; */
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
-.slider {
-    position: relative;
-    width: 100%;
-    height: 32rem;
-    overflow: hidden;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-
-
-#next,
-#prev {
-    position: absolute;
-    top: 40%;
-    color: #e8c942;
-    background-color: transparent;
-    border: none;
-    font-size: xxx-large;
-    font-family: monospace;
-    font-weight: bold;
-    left: 10%;
-    cursor: pointer;
-}
-
-#next {
-    left: unset;
-    right: 10%;
-}
-
-
-
-
-
-.timeline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* min-height: 100vh; */
-}
-
-.timeline .timeline-row {
-    display: flex;
-    column-gap: 4rem;
-    flex-wrap: wrap;
-}
-
-.timeline-row .timeline-column {
-    flex: 1 1 20rem;
-}
-
-.timeline-column .timeline-title {
-    font-size: 2rem;
-    margin: 2rem 0 1rem 1rem;
-}
-
-.timeline-column .timeline-box {
-/* background: purple; */
-border-left: 2px solid #e8c942;
-}
-
-
-.timeline-box .timeline-content {
-    position: relative;
-    padding-left: 2rem;
-}
-
-.timeline-box .timeline-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -0.6rem;
-    width: 1rem;
-    height: 1rem;
-    background: #e8c942;
-    border-radius: 50%;
-}
-
-.timeline-content .content {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #e8ca4258;
-    /* border-radius: 8px; */
-    margin-bottom: 2rem;
-
-}
-
-
-.timeline-content .content .year  {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
+.sectionTitle {
+    font-family: kaftan;
     color: rgb(120, 158, 113);
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    user-select: none;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-.timeline-content .content .year i  {
-    margin-right: 1rem;
-}
-
-.timeline-content .content h3 {
-    font-size: 1rem ;
-    margin: 0.5rem 0;
-}
-
-.timeline-content .content p {
-    opacity: 0.9;
-}
-
-.timeline-content .content {
-    font-size: 1rem;
-}
-
-
-
-
-
-
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.logos {
-    overflow: hidden;
-    padding: 60px 0;
-    background: rgb(0, 0, 0);
-    white-space: nowrap;
-    position: relative;
-}
-
-.logos:before,
-.logos:after {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-}
-
-.logos:before {
-    left: 0;
-    background: linear-gradient(to left,rgba(255, 255, 255, 0),  rgb(0, 0, 0));
-}
-
-.logos:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
-}
-
-.logos:hover .logos-slide {
-    animation-play-state: paused;
-}
-
-.logos-slide {
-    display: inline-flex;
-    animation: 35s slide infinite linear;
-}
-
-.logos-slide .logoItem {
-    height: 90px;
-    margin: 0 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 @media only screen and (max-width: 767px) {
     section {
@@ -370,7 +266,30 @@ border-left: 2px solid #e8c942;
         align-items: center;
     }
 
-       
+    .titleBox {
+        margin-left: 0
+    }
+    
+    .titleBox #title {
+        font-size: 4rem;
+    }
+
+    .principalBox {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subtitleName {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    #photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px
+    }
 
 }
 
@@ -397,14 +316,39 @@ border-left: 2px solid #e8c942;
         width: 30rem;
     }
 
-        #photo {
-            margin-left: 0;
-        }
+    #photo {
+        margin-left: 0;
+    }
+
+    #photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px
+    }
+
+    .titleBox {
+        margin-left: 0
+    }
+    .titleBox #title {
+        font-size: 4rem;
+    }
+    .principalBox {
+        justify-content: center;
+        align-items: center;
+    }
           
 }
 
 @media only screen and (min-width: 1280px) {
-#photo {
+    #photo {
         margin-left: 0;
+    }
+
+    #photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px
     }
 }

@@ -1,0 +1,60 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 32rem;
+    overflow: hidden;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#next,
+#prev {
+    position: absolute;
+    top: 40%;
+    color: #e8c942;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 10%;
+    cursor: pointer;
+}
+
+#next {
+    left: unset;
+    right: 10%;
+}
+
+.item {
+
+    position: absolute;
+    width: 40rem;
+    height: auto;
+    text-align: justify;
+    background-color: #000;
+    border-radius: 10px;
+    /* padding: 20px; */
+    transition: 0.5s;
+
+
+    /* top: 5rem; */
+}
+
+.cardInfo {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cardInfo h2 {
+    color: rgb(120, 158, 113);
+}

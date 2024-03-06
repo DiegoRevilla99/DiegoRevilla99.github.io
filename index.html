@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/timeline.css" />
 
     <style>
       body {
@@ -28,7 +31,6 @@
         width: 100%;
         border: 37px solid transparent;
         box-sizing: border-box;
-        /* z-index: 999; */
       "
     >
       <div
@@ -46,62 +48,11 @@
         <div id="principalContainer"></div>
         <div id="container3D">
           <div style="height: 100%; width: 100%">
-            <div
-              style="
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  height: 100%;
-                  width: 100%;
-                  justify-content: start;
-                  align-items: center;
-                "
-              >
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: column;
-
-                    margin-left: 10rem;
-                  "
-                >
-                  <span
-                    style="
-                      font-family: kaftan;
-                      color: white;
-                      font-size: 6rem;
-                      letter-spacing: 0.2rem;
-                      text-align: center;
-                      user-select: none;
-                      opacity: 0.9;
-                      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-                    "
-                  >
-                    Diego Revilla
-                  </span>
-                  <span
-                    style="
-                      font-family: kaftan;
-                      color: white;
-                      font-size: 1rem;
-                      letter-spacing: 0.2rem;
-                      text-align: right;
-                      user-select: none;
-                      opacity: 0.9;
-                      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-                    "
-                  >
-                    FRONTEND DEVELOPER
-                  </span>
+            <div class="principalContainer">
+              <div class="principalBox">
+                <div class="titleBox">
+                  <span id="title" class="titleName"> Diego Revilla </span>
+                  <span class="subtitleName"> FRONTEND DEVELOPER </span>
                 </div>
               </div>
             </div>
@@ -110,55 +61,20 @@
       </div>
     </header>
     <main>
-      <section style="display: flex; flex-direction: column; color: aliceblue">
-        <h2
-          style="
-            font-family: kaftan;
-            color: rgb(120, 158, 113);
-            font-size: 2rem;
-            letter-spacing: 0.2rem;
-            user-select: none;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-          "
-        >
-          ABOUT ME
-        </h2>
+      <section id="aboutSection">
+        <h2 class="sectionTitle">ABOUT ME</h2>
         <div class="aboutMeInfo">
           <div style="flex: 2">
             <figure id="photo">
-              <img
-                src="/public/img/me.webp"
-                style="width: 100%; height: auto; display: block; border-radius: 5px"
-              />
+              <img src="/public/img/me.webp" />
             </figure>
           </div>
-          <article style="flex: 4; display: flex; flex-direction: column; padding: 2rem">
+          <article class="aboutArticle">
             <header>
-              <h3
-                style="
-                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                "
-              >
-                José Antonio Diego Revilla
-              </h3>
-              <h4
-                style="
-                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                  opacity: 0.9;
-                "
-              >
-                Computer Systems Engineer
-              </h4>
+              <h3>José Antonio Diego Revilla</h3>
+              <h4>Computer Systems Engineer</h4>
             </header>
-            <p
-              style="
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                opacity: 0.8;
-              "
-            >
+            <p>
               I am a highly responsible and dedicated web developer passionate about programming and
               problem-solving. I approach my work professionally, staying updated with the latest
               technologies and trends. I enjoy self-learning and find constant challenges to be
@@ -194,16 +110,7 @@
           </div>
           <div class="item">
             <figure style="margin-left: 0; margin-right: 0; margin-top: 0">
-              <img
-                src="/public/img/proyecto2.png"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  display: block;
-                  border-radius: 5px;
-                  object-fit: cover;
-                "
-              />
+              <img src="/public/img/proyecto2.png" class="projectImage" />
               <figcaption class="cardInfo">
                 <h2>Plumbing service management system</h2>
                 <span
@@ -221,23 +128,12 @@
             quia fugit molestiae officiis!
           </div>
 
-          <button id="next">></button>
-          <button id="prev"><</button>
+          <button id="next">&gt;</button>
+          <button id="prev">&lt;</button>
         </div>
       </section>
       <section class="experienceSection">
-        <h2
-          style="
-            font-family: kaftan;
-            color: rgb(120, 158, 113);
-            font-size: 2rem;
-            letter-spacing: 0.2rem;
-            user-select: none;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-          "
-        >
-          EXPERIENCE
-        </h2>
+        <h2 class="sectionTitle">EXPERIENCE</h2>
         <div class="timeline">
           <div class="timeline-row" style="color: aliceblue">
             <div class="timeline-column">
@@ -284,69 +180,20 @@
         </div>
       </section>
       <section id="educationSection">
-        <h2
-          style="
-            font-family: kaftan;
-            color: rgb(120, 158, 113);
-            font-size: 2rem;
-            letter-spacing: 0.2rem;
-            user-select: none;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-          "
-        >
-          EDUCATION
-        </h2>
+        <h2 class="sectionTitle">EDUCATION</h2>
         <div class="educationInfo">
           <article class="educationArticle">
             <header>
-              <h3
-                style="
-                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                "
-              >
-                Instituto Tecnológico de Oaxaca
-              </h3>
-              <h4
-                style="
-                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                  opacity: 0.9;
-                "
-              >
-                Computer Systems Engineer
-              </h4>
+              <h3>Instituto Tecnológico de Oaxaca</h3>
+              <h4>Computer Systems Engineer</h4>
             </header>
-            <em
-              style="
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                opacity: 0.8;
-              "
-            >
-              2018 — 2023 | Oaxaca de Juárez, Oaxaca, México
-            </em>
+            <em> 2018 — 2023 | Oaxaca de Juárez, Oaxaca, México </em>
           </article>
 
           <article class="educationArticle">
             <header>
-              <h3
-                style="
-                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                "
-              >
-                Languajes
-              </h3>
-              <h4
-                style="
-                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                  opacity: 0.9;
-                "
-              >
-                English - B2 | Spanish - Native Speaker
-              </h4>
+              <h3>Languajes</h3>
+              <h4>English - B2 | Spanish - Native Speaker</h4>
             </header>
           </article>
         </div>
@@ -391,9 +238,8 @@
         </div>
       </section>
     </main>
-    <!-- <script type="module" src="js/three.js"></script> -->
     <script type="module" src="./BackgroundShader.js"></script>
-    <script type="module" src="/js/links.js"></script>
+    <script src="/js/links.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/skillsSlider.js"></script>
   </body>
