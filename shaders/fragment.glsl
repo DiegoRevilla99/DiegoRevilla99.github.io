@@ -47,12 +47,14 @@ void main() {
     float secondPattern = lines(baseUV, 0.1);
     float thirdPattern = lines(baseUV, 0.4);
 
-    vec3 baseFirst = vec3(255. / 255., 77. / 255., 90. / 255.);
-    // vec3(129. / 255., 100. / 255., 234. / 255.);
-    vec3 baseSecond = vec3(7. / 255., 33. / 255., 65. / 255.);
-    vec3 baseThird = vec3(71. / 255., 85. / 255., 119. / 255.);
-    // vec3 accent = vec3(88. / 255., 102. / 255., 144. / 255.);
+    vec3 baseFirst = vec3(120. / 255., 158. / 255., 113. / 255.);
+    vec3 baseSecond = vec3(224. / 255., 148. / 255., 66. / 255.);
+    vec3 baseThird = vec3(232. / 255., 201. / 255., 73. / 255.);
     vec3 accent = vec3(0., 0., 0.);
+    // vec3 baseFirst = vec3(255. / 255., 77. / 255., 90. / 255.);
+    // vec3 baseSecond = vec3(7. / 255., 33. / 255., 65. / 255.);
+    // vec3 baseThird = vec3(71. / 255., 85. / 255., 119. / 255.);
+    // vec3 accent = vec3(0., 0., 0.);
 
     // vec3 baseColor = mix(baseFirst, baseSecond, basePattern);
     // vec3 secondBaseColor = mix(baseColor, accent, secondPattern);

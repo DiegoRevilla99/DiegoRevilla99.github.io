@@ -21,6 +21,26 @@
     </script>
   </head>
   <body>
+    <div
+      style="
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border: 37px solid transparent;
+        box-sizing: border-box;
+        /* z-index: 999; */
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          box-sizing: border-box;
+        "
+      ></div>
+    </div>
     <header>
       <div>
         <div id="principalContainer"></div>
@@ -62,7 +82,7 @@
                       letter-spacing: 0.2rem;
                       text-align: center;
                       user-select: none;
-                      opacity: 0.7;
+                      opacity: 0.9;
                       text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
                     "
                   >
@@ -76,7 +96,7 @@
                       letter-spacing: 0.2rem;
                       text-align: right;
                       user-select: none;
-                      opacity: 0.7;
+                      opacity: 0.9;
                       text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
                     "
                   >
@@ -90,9 +110,91 @@
       </div>
     </header>
     <main>
-      <div style="height: 30rem"></div>
+      <section style="display: flex; flex-direction: column; color: aliceblue">
+        <h2
+          style="
+            font-family: kaftan;
+            color: rgb(120, 158, 113);
+            font-size: 2rem;
+            letter-spacing: 0.2rem;
+            user-select: none;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+          "
+        >
+          ABOUT ME
+        </h2>
+        <div style="display: flex">
+          <div style="flex: 2">
+            <figure id="photo">
+              <img
+                src="/public/img/me.webp"
+                style="width: 100%; height: auto; display: block; border-radius: 5px"
+              />
+            </figure>
+          </div>
+          <article style="flex: 4; display: flex; flex-direction: column; padding: 2rem">
+            <header>
+              <h3
+                style="
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                "
+              >
+                José Antonio Diego Revilla
+              </h3>
+              <h4
+                style="
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                  opacity: 0.9;
+                "
+              >
+                Computer Systems Engineer
+              </h4>
+            </header>
+            <p
+              style="
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                opacity: 0.8;
+              "
+            >
+              I am a highly responsible and dedicated web developer passionate about programming and
+              problem-solving. I approach my work professionally, staying updated with the latest
+              technologies and trends. I enjoy self-learning and find constant challenges to be
+              motivating. I am an adaptable and motivated collaborator, committed to the success of
+              the projects I undertake.
+            </p>
+            <div style="display: flex; height: 100%">
+              <div class="socialIcon" id="githubIcon">
+                <span>Github</span>
+                <img src="/public/img/github-icon.png" />
+              </div>
+              <div class="socialIcon" id="linkedinIcon">
+                <span>LinkedIn</span>
+                <img src="/public/img/linkedin-icon.png" />
+              </div>
+              <div class="socialIcon" id="whatsIcon">
+                <span>Whatsapp</span>
+                <img src="/public/img/whats-icon.png" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        style="
+          height: 30rem;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          color: aliceblue;
+          background-color: #302a0f;
+        "
+      ></section>
     </main>
     <!-- <script type="module" src="js/three.js"></script> -->
     <script type="module" src="./BackgroundShader.js"></script>
+    <script type="module" src="/js/links.js"></script>
   </body>
 </html>
