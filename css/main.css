@@ -10,8 +10,8 @@ body {
 
 section {
     background-color: rgba(0, 0, 0, 1);
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     padding-left: 20rem;
     padding-right: 20rem;
 }
@@ -47,42 +47,153 @@ section {
     margin-left: 0;
 }
 
+#sliderSection {
+    background-color: #171407;
+    padding-top: 5rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+#educationSection {
+    background-color: #171407;
+}
 
 .slider {
     position: relative;
     width: 100%;
-    height: 370px;
+    height: 32rem;
     overflow: hidden;
     z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item {
+
     position: absolute;
-    width: 200px;
-    height: 320px;
+    width: 40rem;
+    height: auto;
     text-align: justify;
-    background-color: #fff;
+    background-color: #000;
     border-radius: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     transition: 0.5s;
-    left: calc(50% - 110px);
-    top: 0;
+    
+
+    /* top: 5rem; */
 }
 
 #next,
 #prev {
     position: absolute;
     top: 40%;
-    color: #fff;
+    color: #e8c942;
     background-color: transparent;
     border: none;
     font-size: xxx-large;
     font-family: monospace;
     font-weight: bold;
     left: 10%;
+    cursor: pointer;
 }
 
 #next {
     left: unset;
     right: 10%;
+}
+
+.cardInfo {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cardInfo h2{
+    color: rgb(120, 158, 113);
+}
+
+
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+
+.timeline .timeline-row {
+    display: flex;
+    column-gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.timeline-row .timeline-column {
+    flex: 1 1 20rem;
+}
+
+.timeline-column .timeline-title {
+    font-size: 2rem;
+    margin: 2rem 0 1rem 1rem;
+}
+
+.timeline-column .timeline-box {
+/* background: purple; */
+border-left: 2px solid #e8c942;
+}
+
+
+.timeline-box .timeline-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-box .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.6rem;
+    width: 1rem;
+    height: 1rem;
+    background: #e8c942;
+    border-radius: 50%;
+}
+
+.timeline-content .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e8ca4258;
+    /* border-radius: 8px; */
+    margin-bottom: 2rem;
+
+}
+
+
+.timeline-content .content .year  {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: rgb(120, 158, 113);
+}
+
+.timeline-content .content .year i  {
+    margin-right: 1rem;
+}
+
+.timeline-content .content h3 {
+    font-size: 1rem ;
+    margin: 0.5rem 0;
+}
+
+.timeline-content .content p {
+    opacity: 0.9;
+}
+
+.timeline-content .content {
+    font-size: 1rem;
 }

@@ -231,8 +231,6 @@ function animation() {
 
 const scene = new THREE.Scene();
 
-const currentMount = document.getElementById("container3D");
-
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.001, 1000);
 
 camera.position.set(0.06, 0, 0.7);
