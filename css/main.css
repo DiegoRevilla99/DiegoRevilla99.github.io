@@ -1,0 +1,23 @@
+
+body {
+    overflow-x: hidden;
+}
+
+#principalContainer  {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: border 0.5s ease-in-out;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);
+}
+
+
+main {
+    background-color: black;
+}
+
+@font-face {
+    font-family: kaftan;
+    src: url(../public/kaftan.otf);
+}
