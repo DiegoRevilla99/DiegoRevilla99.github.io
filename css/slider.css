@@ -58,3 +58,42 @@
 .cardInfo h2 {
     color: rgb(120, 158, 113);
 }
+
+@media only screen and (max-width: 767px) {
+   
+
+    .item {
+        width: 13rem;
+    }
+
+    .cardInfo {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+
+    .cardInfo h2 {
+
+        font-size: 1rem;
+    }
+
+    .cardInfo span {
+
+        font-size: 0.8rem;
+    }
+
+  
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+
+
+    .item {
+        width: 30rem;
+    }
+
+ 
+
+}
